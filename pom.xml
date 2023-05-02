@@ -43,8 +43,7 @@
 	</dependencyManagement>
 
 	<distributionManagement>
-
-            <repository>
+	   <repository>
               <id>nexus</id>
               <name>Chandra Technologies Releases Nexus Repository</name>
               <url>http://52.66.122.39:8081/chandrasoftwaresolutions/repository/spring_boot/</url>
@@ -54,7 +53,7 @@
 		   <id>nexus</id>
 		   <name>Chandra Technologies snapshot nexus repository</name>
 		   <url>http://52.66.122.39:8081/chandraseftwaresolutions/repository/spring_boot_snapshot/</url>
-		   
+	   </snapshotRepository>	   
 	</distributionManagement>  
 	<dependencies>
 		<dependency>
