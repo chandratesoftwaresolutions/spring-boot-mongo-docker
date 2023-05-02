@@ -18,7 +18,9 @@
 		<spring-boot.version>2.1.5.RELEASE</spring-boot.version>
 		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
 		<logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
-	</properties>
+		<sonar.login>admin</sonar.login>
+                <sonar.password>admin</sonar.password>
+       </properties>
 
 	<dependencyManagement>
 		<dependencies>
@@ -39,6 +41,20 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<distributionManagement>
+
+            <repository>
+              <id>nexus</id>
+              <name>Chandra Technologies Releases Nexus Repository</name>
+              <url>http://52.66.122.39:8081/chandrasoftwaresolutions/repository/spring_boot/</url>
+            </repository>
+		
+	   <snapshotRepository>
+		   <id>nexus</id>
+		   <name>Chandra Technologies snapshot nexus repository</name>
+		   <url>http://52.66.122.39:8081/chandraseftwaresolutions/repository/spring_boot_snapshot/</url>
+		   
+	</distributionManagement>  
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
